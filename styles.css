@@ -17,8 +17,43 @@
     --zelda-glow: rgba(0, 153, 255, 0.6);
 }
 
+/* 引入华云黑体字体 */
+@font-face {
+    font-family: 'HYQiHei';
+    src: local('HYQiHei'), local('HYQiHei-65S'), url('https://cdn.jsdelivr.net/gh/zhanglun/zhfontcdn@main/hyqihei65s.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* 引入思源宋体字体 */
+@font-face {
+    font-family: 'Source Han Serif SC';
+    src: local('Source Han Serif SC'), local('SourceHanSerifSC-Regular'), url('https://fonts.gstatic.com/ea/sourcehanserifsc/v14/SourceHanSerifSC-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* 引入站酷酷黑字体 */
+@font-face {
+    font-family: 'ZCOOL KuHei';
+    src: url('https://fonts.gstatic.com/s/zcoolkuhei/v1/2Eb5L_R5IXJEWhD3AOhSvFC554A.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* 引入华云楷体字体 */
+@font-face {
+    font-family: 'HYKaiTi';
+    src: local('HYKaiTi'), url('https://cdn.jsdelivr.net/gh/zhanglun/zhfontcdn@main/hykaiti.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* 引入隶书字体 */
+@font-face {
+    font-family: 'LiSu';
+    src: local('LiSu');
+    font-display: swap;
+}
+
 body {
-    font-family: 'Cinzel', serif;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
     background: linear-gradient(135deg, #83cbec 0%, #30618a 50%, #511b5d 100%);
     color: var(--zelda-light);
     line-height: 1.6;
@@ -102,6 +137,7 @@ body {
     color: var(--zelda-gold);
     text-shadow: 2px 2px 4px var(--zelda-shadow);
     letter-spacing: 2px;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
 }
 
 .triforce {
@@ -181,6 +217,7 @@ body {
     text-shadow: 3px 3px 6px var(--zelda-shadow);
     margin-bottom: 1rem;
     animation: title-glow 4s ease-in-out infinite;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
 }
 
 @keyframes title-glow {
@@ -193,6 +230,7 @@ body {
     color: var(--zelda-light);
     margin-bottom: 3rem;
     opacity: 0.9;
+    font-family: 'ZCOOL KuHei', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 .hero-buttons {
@@ -206,7 +244,7 @@ body {
 .zelda-btn {
     position: relative;
     padding: 1rem 2rem;
-    font-family: 'Cinzel', serif;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     border: 3px solid var(--zelda-gold);
@@ -279,6 +317,7 @@ body {
     text-align: center;
     margin: 4rem 0 3rem;
     text-shadow: 2px 2px 4px var(--zelda-shadow);
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
 }
 
 /* 冒险卡片 */
@@ -303,6 +342,7 @@ body {
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(10px);
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 .adventure-card::before {
@@ -343,12 +383,14 @@ body {
     color: var(--zelda-gold);
     margin-bottom: 1rem;
     font-weight: 700;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
 }
 
 .adventure-card p {
     color: var(--zelda-light);
     margin-bottom: 1.5rem;
     opacity: 0.9;
+    font-family: 'ZCOOL KuHei', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 .card-btn {
@@ -375,6 +417,7 @@ body {
     border-radius: 15px;
     border: 2px solid var(--zelda-gold);
     transition: all 0.3s ease;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 .character-item:hover {
@@ -398,11 +441,13 @@ body {
     color: var(--zelda-gold);
     margin-bottom: 1rem;
     font-weight: 700;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
 }
 
 .character-item p {
     color: var(--zelda-light);
     opacity: 0.9;
+    font-family: 'ZCOOL KuHei', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 /* 世界地图 */
@@ -426,6 +471,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 .map-region::after {
@@ -454,11 +500,13 @@ body {
     color: var(--zelda-gold);
     margin-bottom: 1rem;
     font-weight: 700;
+    font-family: 'Source Han Serif SC', 'Cinzel', 'PingFang SC', 'Microsoft YaHei', 'Arial', serif;
 }
 
 .map-region p {
     color: var(--zelda-light);
     opacity: 0.9;
+    font-family: 'ZCOOL KuHei', 'PingFang SC', 'Microsoft YaHei', 'Arial', sans-serif;
 }
 
 /* 页脚 */
@@ -652,4 +700,13 @@ body {
 .nav-link:focus {
     outline: 2px solid var(--zelda-gold);
     outline-offset: 2px;
+}
+
+/* 全局大标题字体 */
+.logo h1, .hero-title, .section-title, .adventure-card h3, .character-item h3, .map-region h3 {
+    font-family: 'HYKaiTi', 'KaiTi', 'STKaiti', 'Microsoft YaHei', 'PingFang SC', 'Arial', sans-serif !important;
+}
+/* 全局自标题字体 */
+.hero-subtitle, .adventure-card p, .character-item p, .map-region p {
+    font-family: 'LiSu', 'STLiti', 'Microsoft YaHei', 'PingFang SC', 'Arial', sans-serif !important;
 } 

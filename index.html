@@ -6,6 +6,24 @@
     <title>大知闲闲 - 抚仙湖·终知 冒险之旅</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'HYKaiTi';
+        src: local('HYKaiTi'), url('https://cdn.jsdelivr.net/gh/zhanglun/zhfontcdn@main/hykaiti.woff2') format('woff2');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'LiSu';
+        src: local('LiSu');
+        font-display: swap;
+      }
+      .logo h1, .hero-title, .section-title, .adventure-card h3, .character-item h3, .map-region h3 {
+        font-family: 'HYKaiTi', 'KaiTi', 'STKaiti', 'Microsoft YaHei', 'PingFang SC', 'Arial', sans-serif !important;
+      }
+      .hero-subtitle, .adventure-card p, .character-item p, .map-region p {
+        font-family: 'LiSu', 'STLiti', 'Microsoft YaHei', 'PingFang SC', 'Arial', sans-serif !important;
+      }
+    </style>
 </head>
 <body>
     <!-- 背景装饰 -->
@@ -58,19 +76,19 @@
             <div class="adventure-cards">
                 <div class="adventure-card" data-adventure="temple">
                     <div class="card-icon">⛵️</div>
-                    <h3>古代遗迹</h3>
+                    <h3>湖底遗迹</h3>
                     <p>探索抚仙湖水下神秘的古代遗迹，解开古老的谜题</p>
                     <button class="zelda-btn card-btn">潜入水下</button>
                 </div>
                 <div class="adventure-card" data-adventure="forest">
                     <div class="card-icon">⛰️</div>
-                    <h3>迷失森林</h3>
+                    <h3>迷失山林</h3>
                     <p>徒步&攀登麒麟山，寻找隐藏的宝藏</p>
                     <button class="zelda-btn card-btn">进入森林</button>
                 </div>
                 <div class="adventure-card" data-adventure="castle">
                     <div class="card-icon">🏰</div>
-                    <h3>大知闲闲城堡</h3>
+                    <h3>大知闲闲民宿城堡</h3>
                     <p>扮演游戏人物角色，体验一日多人格面具的活法儿</p>
                     <button class="zelda-btn card-btn">踏入城堡</button>
                 </div>
@@ -82,17 +100,17 @@
             <h2 class="section-title">传奇角色</h2>
             <div class="character-showcase">
                 <div class="character-item">
-                    <div class="character-avatar link-avatar">🧑‍🎨🌼</div>
+                    <div class="character-avatar link-avatar">🌼</div>
                     <h3>艺术家A</h3>
                     <p>植物染织艺术</p>
                 </div>
                 <div class="character-item">
-                    <div class="character-avatar zelda-avatar">🧑‍🎨👁️</div>
+                    <div class="character-avatar zelda-avatar">👁️</div>
                     <h3>艺术家B</h3>
-                    <p>绘画视觉艺术</p>
+                    <p>视觉绘画艺术</p>
                 </div>
                 <div class="character-item">
-                    <div class="character-avatar ganon-avatar">🧑‍🎨👻</div>
+                    <div class="character-avatar ganon-avatar">👻</div>
                     <h3>艺术家C</h3>
                     <p>行为表演艺术</p>
                 </div>
@@ -109,10 +127,10 @@
                 </div>
                 <div class="map-region" data-region="death-mountain">
                     <h3>戒律山脉·麒麟山</h3>
-                    <p>火山地带，充满挑战</p>
+                    <p>险峻地带，挑战的开始</p>
                 </div>
                 <div class="map-region" data-region="zora-domain">
-                    <h3>智慧所在·大知民宿</h3>
+                    <h3>智慧聚落·大知闲闲民宿</h3>
                     <p>当代艺术驻地AiR</p>
                 </div>
             </div>
