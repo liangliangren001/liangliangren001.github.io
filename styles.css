@@ -7,19 +7,19 @@
 
 :root {
     /* 塞尔达配色方案 */
-    --zelda-green: #2d5016;
-    --zelda-gold: #ffd700;
-    --zelda-brown: #8b4513;
-    --zelda-dark: #1a1a1a;
+    --zelda-green: #2e72bc;
+    --zelda-gold: #c3b66f;
+    --zelda-brown: #6d4885;
+    --zelda-dark: #9e91d8;
     --zelda-light: #f4f4f4;
-    --zelda-accent: #32cd32;
-    --zelda-shadow: rgba(0, 0, 0, 0.3);
-    --zelda-glow: rgba(255, 215, 0, 0.6);
+    --zelda-accent: #545871;
+    --zelda-shadow: rgba(96, 179, 251, 0.3);
+    --zelda-glow: rgba(0, 153, 255, 0.6);
 }
 
 body {
     font-family: 'Cinzel', serif;
-    background: linear-gradient(135deg, #1a2a1a 0%, #2d5016 50%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #83cbec 0%, #30618a 50%, #511b5d 100%);
     color: var(--zelda-light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -43,7 +43,7 @@ body {
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 35px solid rgba(255, 215, 0, 0.1);
+    border-bottom: 35px solid rgba(255, 25, 0, 0.1);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -228,7 +228,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 106, 255, 0.3), transparent);
     transition: left 0.5s ease;
 }
 
@@ -294,7 +294,7 @@ body {
 }
 
 .adventure-card {
-    background: linear-gradient(135deg, rgba(45, 80, 22, 0.8), rgba(50, 205, 50, 0.3));
+    background: linear-gradient(135deg, rgba(92, 70, 165, 0.8), rgba(223, 229, 223, 0.981));
     border: 2px solid var(--zelda-gold);
     border-radius: 15px;
     padding: 2rem;
@@ -312,7 +312,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    background: linear-gradient(45deg, transparent, rgba(255, 0, 128, 0.1), transparent);
     transform: translateX(-100%);
     transition: transform 0.5s ease;
 }
@@ -371,7 +371,7 @@ body {
 .character-item {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(45, 80, 22, 0.6), rgba(50, 205, 50, 0.2));
+    background: linear-gradient(135deg, rgba(203, 240, 241, 0.6), rgba(50, 205, 50, 0.2));
     border-radius: 15px;
     border: 2px solid var(--zelda-gold);
     transition: all 0.3s ease;
@@ -435,7 +435,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, rgba(255, 215, 0, 0.1) 100%);
+    background: radial-gradient(circle at center, transparent 0%, rgba(129, 197, 186, 0.602) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
