@@ -3,159 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大知闲闲 - 抚仙湖·终知 冒险之旅</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-      @font-face {
-        font-family: 'HYKaiTi';
-        src: local('HYKaiTi'), url('https://cdn.jsdelivr.net/gh/zhanglun/zhfontcdn@main/hykaiti.woff2') format('woff2');
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'LiSu';
-        src: local('LiSu');
-        font-display: swap;
-      }
-      .logo h1, .hero-title, .section-title, .adventure-card h3, .character-item h3, .map-region h3 {
-        font-family: 'HYKaiTi', 'KaiTi', 'STKaiti', 'Microsoft YaHei', 'PingFang SC', 'Arial', sans-serif !important;
-      }
-      .hero-subtitle, .adventure-card p, .character-item p, .map-region p {
-        font-family: 'LiSu', 'STLiti', 'Microsoft YaHei', 'PingFang SC', 'Arial', sans-serif !important;
-      }
-    </style>
+    <title>艺术家良亮人作品集</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 背景装饰 -->
-    <div class="background-decoration">
-        <div class="floating-triangle"></div>
-        <div class="floating-triangle"></div>
-        <div class="floating-triangle"></div>
-    </div>
-
-    <!-- 标题栏 -->
-    <header class="zelda-header">
-        <div class="header-content">
-            <div class="logo">
-                <span class="triforce">▲</span>
-                <h1>抚仙湖·终知</h1>
-                <span class="triforce">▲</span>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Visual Artist</a>
             </div>
-            <nav class="nav-menu">
-                <a href="#home" class="nav-link">首页</a>
-                <a href="#adventures" class="nav-link">谜题</a>
-                <a href="#characters" class="nav-link">角色</a>
-                <a href="#world" class="nav-link">世界</a>
-            </nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="pages/about.html">关于</a></li>
+                <li><a href="pages/portfolio.html">作品</a></li>
+                <li><a href="pages/contact.html">联系</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <!-- 主要内容区域 -->
     <main class="main-content">
-        <!-- 英雄区域 -->
-        <section id="home" class="hero-section">
+        <!-- 首页横幅 -->
+        <section class="hero">
             <div class="hero-content">
-                <h2 class="hero-title">开启你的大知闲闲冒险之旅</h2>
-                <p class="hero-subtitle">在抚仙湖与麒麟山之间探索无尽的奥秘</p>
-                <div class="hero-buttons">
-                    <button class="zelda-btn primary-btn" data-action="start-adventure">
-                        <span class="btn-text">开始冒险</span>
-                        <div class="btn-glow"></div>
-                    </button>
-                    <button class="zelda-btn secondary-btn" data-action="explore-world">
-                        <span class="btn-text">探索世界</span>
-                        <div class="btn-glow"></div>
-                    </button>
+                <h1 class="hero-title">良亮人 GoodLightHuman</h1>
+                <p class="hero-subtitle">视觉艺术家，摄影师 & 舞者 
+                    <br>
+                    Visual Artist , Photographer & Dancer</p>
+                <div class="hero-description">
+                    <p>枯木里龙吟，骷髅里眼睛……以视觉为媒介，探索未知与可能。</p>
+                    <p>Dragon roars in the dead wood, eyes see through the fresh skull...Using vision as a medium, to explore the unknown and possibilities</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="pages/portfolio.html" class="btn-primary">查看作品view works</a>
+                    <a href="pages/about.html" class="btn-secondary">了解更多about me</a>
                 </div>
             </div>
         </section>
 
-        <!-- 冒险区域 -->
-        <section id="adventures" class="adventures-section">
-            <h2 class="section-title">史诗冒险</h2>
-            <div class="adventure-cards">
-                <div class="adventure-card" data-adventure="temple">
-                    <div class="card-icon">⛵️</div>
-                    <h3>湖底遗迹</h3>
-                    <p>探索抚仙湖水下神秘的古代遗迹，解开古老的谜题</p>
-                    <button class="zelda-btn card-btn">潜入水下</button>
+        <!-- 精选作品 -->
+        <section class="featured-works">
+            <div class="section-header">
+                <h2>精选作品 Selected Works</h2>
+                <p>最近完成的艺术项目 Recent Art Projects</p>
+            </div>
+            <div class="works-grid">
+                <article class="work-item">
+                    <div class="work-image multi-image" id="yesterday-world-images">
+                        <!-- 图片将由JS动态插入 -->
+                    </div>
+                    <div class="work-info">
+                        <h3>昨日世界 Yesterday World</h3>
+                        <p>古迹装置 Installation in ancient building / 2016～2020 公共艺术项目 Public Art Project</p>
+                        <a href="pages/portfolio.html" class="work-link">查看详情</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-image multi-image" id="arm-spirit-images">
+                        <!-- 图片将由JS动态插入 -->
+                    </div>
+                    <div class="work-info">
+                        <h3>成精的手臂 The Arm of the Spirit</h3>
+                        <p>古建装置 Installation in ancient building / 2023安徽文化之美·纸上空间</p>
+                        <a href="pages/portfolio.html" class="work-link">查看详情</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-image multi-image" id="paper-waves-images">
+                        <!-- 图片将由JS动态插入 -->
+                    </div>
+                    <div class="work-info">
+                        <h3>纸上云波 Paper Waves</h3>
+                        <p>剪纸装置&表演 Installation in paper & performance / 2023云南高黎贡山手工造纸博物馆</p>
+                        <a href="pages/portfolio.html" class="work-link">查看详情</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-image multi-image" id="sea-god-images">
+                        <!-- 图片将由JS动态插入 -->
+                    </div>
+                    <div class="work-info">
+                        <h3>遛海遗神 The Sea God</h3>
+                        <p>装置，影像，表演 Installation, video, performance / 2022厦门红顶当代艺术中心</p>
+                        <a href="pages/portfolio.html" class="work-link">查看详情</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-image multi-image" id="blue-dizziness-images">
+                        <!-- 图片将由JS动态插入 -->
+                    </div>
+                    <div class="work-info">
+                        <h3>蓝色眩晕 Blue Dizziness</h3>
+                        <p>蜡染装置&表演 Installation in wax & performance / 2021贵州凯里非遗蜡染博物馆</p>
+                        <a href="pages/portfolio.html" class="work-link">查看详情</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-image multi-image" id="plane-works-images">
+                        <!-- 图片将由JS动态插入 -->
+                    </div>
+                    <div class="work-info">
+                        <h3>平面作品 Paper Cuttings</h3>
+                        <p> 剪纸，刻纸，水墨&综合材料 Paper cutting, carving, ink & mixed media / 2011-2021</p>
+                        <a href="pages/portfolio.html" class="work-link">查看详情</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 技能展示 -->
+        <section class="skills">
+            <div class="section-header">
+                <h2>专业技能 Professional Skills</h2>
+                <p>视觉艺术领域 Visual Art Field</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>公共艺术项目 Public Art Projects</h3>
+                    <ul>
+                        <li>装置 Installation</li>
+                        <li>影像 Video</li>
+                        <li>表演 Performance</li>
+                        <li>剪纸 Paper Cutting</li>
+                        <li>刻纸 Carving</li>
+                        <li>水墨 Ink</li>
+                        <li>综合材料 Mixed Media</li>
+                    </ul>
                 </div>
-                <div class="adventure-card" data-adventure="forest">
-                    <div class="card-icon">⛰️</div>
-                    <h3>迷失山林</h3>
-                    <p>徒步&攀登麒麟山，寻找隐藏的宝藏</p>
-                    <button class="zelda-btn card-btn">进入森林</button>
+                <div class="skill-category">
+                    <h3>艺术衍生设计 Art Derivative Design</h3>
+                    <ul>
+                        <li>商场中庭设计 Mall Atrium Design</li>
+                        <li>民宿壁画设计 Inn Wall Painting Design</li>
+                        <li>伴手礼设计 Souvenir Design</li>
+                        <li>书籍封面&插图设计 Book Cover & Illustration</li>
+                        <li>广告景物背景设计 Advertising Background Design</li>
+                    </ul>
                 </div>
-                <div class="adventure-card" data-adventure="castle">
-                    <div class="card-icon">🏰</div>
-                    <h3>大知闲闲民宿城堡</h3>
-                    <p>扮演游戏人物角色，体验一日多人格面具的活法儿</p>
-                    <button class="zelda-btn card-btn">踏入城堡</button>
+                <div class="skill-category">
+                    <h3>动画制作 & 图片摄影 Animation & Photography</h3>
+                    <ul>
+                        <li>动画导演 Animation Director</li>
+                        <li>动画原画&分镜 Animation Storyboard</li>
+                        <li>动画后期 Animation Post-processing</li>
+                        <li>动画声效制作 Animation Sound Effect</li>
+                        <li>图片摄影 Photography</li>
+                        <li>图片编辑 Image Editing</li>
+                        <li>图片后期 Image Post-processing</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 角色区域 -->
-        <section id="characters" class="characters-section">
-            <h2 class="section-title">传奇角色</h2>
-            <div class="character-showcase">
-                <div class="character-item">
-                    <div class="character-avatar link-avatar">🌼</div>
-                    <h3>艺术家A</h3>
-                    <p>植物染织艺术</p>
-                </div>
-                <div class="character-item">
-                    <div class="character-avatar zelda-avatar">👁️</div>
-                    <h3>艺术家B</h3>
-                    <p>视觉绘画艺术</p>
-                </div>
-                <div class="character-item">
-                    <div class="character-avatar ganon-avatar">👻</div>
-                    <h3>艺术家C</h3>
-                    <p>行为表演艺术</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 世界区域 -->
-        <section id="world" class="world-section">
-            <h2 class="section-title">大知闲闲里世界</h2>
-            <div class="world-map">
-                <div class="map-region" data-region="hyrule">
-                    <h3>定力之湖·抚仙湖</h3>
-                    <p>广阔的湖底，冒险的起点</p>
-                </div>
-                <div class="map-region" data-region="death-mountain">
-                    <h3>戒律山脉·麒麟山</h3>
-                    <p>险峻地带，挑战的开始</p>
-                </div>
-                <div class="map-region" data-region="zora-domain">
-                    <h3>智慧聚落·大知闲闲民宿</h3>
-                    <p>当代艺术驻地AiR</p>
-                </div>
-            </div>
+        <!-- 像素化贪吃蛇游戏区域 -->
+        <section class="snake-section" style="text-align:center; margin: 60px 0;">
+            <h2 style="font-family:monospace; font-size:2rem; letter-spacing:2px;">像素贪吃蛇</h2>
+            <canvas id="snake-canvas" width="320" height="320" style="border:4px solid #222; background:#111; image-rendering:pixelated; margin:0 auto; display:block;"></canvas>
+            <p style="color:#888; font-size:14px; font-family:monospace;">使用方向键控制，吃掉像素方块！</p>
         </section>
     </main>
 
     <!-- 页脚 -->
-    <footer class="zelda-footer">
+    <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 抚仙湖·终知 艺术冒险之旅</p>
-            <div class="footer-decoration">
-                <span class="triforce-small">▲</span>
-                <span class="triforce-small">▲</span>
-                <span class="triforce-small">▲</span>
+            <div class="footer-info">
+                <p>&copy; 2025 良亮人. 保留所有权利. All rights reserved</p>
+            </div>
+            <div class="footer-links">
+                <a href="pages/about.html">About</a>
+                <a href="pages/portfolio.html">Works</a>
+                <a href="pages/contact.html">Contact</a>
             </div>
         </div>
     </footer>
 
-    <!-- 交互式元素 -->
-    <div class="interactive-elements">
-        <div class="floating-rupee">🐠🌊</div>
-        <div class="floating-heart">🐟🌊</div>
-        <div class="floating-arrow">🐚🌊</div>
+    <!-- 放大图片的遮罩和容器 -->
+    <div id="img-modal" class="img-modal">
+        <div class="img-modal-content">
+            <img id="modal-img" src="" alt="放大图片">
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/snake.js"></script>
 </body>
 </html> 
